@@ -1,0 +1,21 @@
+PODS:
+  - Alamofire (4.0.1)
+  - FontAwesome.swift (1.0.0)
+  - Fusuma (1.0.0)
+  - SwiftyJSON (3.1.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.0)
+  - FontAwesome.swift
+  - Fusuma
+  - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: 7682d43245de14874acd142ec137b144aa1dd335
+  FontAwesome.swift: 2d32a3d62195343c2004b7c9043294ed2948553a
+  Fusuma: c95c1c999c765f5dc907670be569157372ff33c4
+  SwiftyJSON: f0be2e604f83e8405a624e9f891898bf6ed4e019
+
+PODFILE CHECKSUM: 52960b9ca908d374d6c74facaa3463ed4d1afdff
+
+COCOAPODS: 1.1.1

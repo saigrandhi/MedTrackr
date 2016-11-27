@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="kep-SU-NW6">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prescription View Controller-->
+        <scene sceneID="6g8-6R-twT">
+            <objects>
+                <viewController id="lex-Is-F2S" customClass="PrescriptionViewController" customModule="ios_pillReader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3ud-7a-2aT"/>
+                        <viewControllerLayoutGuide type="bottom" id="9is-dC-CkT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U3g-Sd-IvL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZJj-KD-8fu"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H87-85-aLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1524" y="806"/>
+        </scene>
+        <!--Pill Reader-->
+        <scene sceneID="aGh-hQ-tLG">
+            <objects>
+                <viewController id="65A-ru-Zyw" customClass="SearchImageViewController" customModule="ios_pillReader" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="muf-1Q-Vmz"/>
+                        <viewControllerLayoutGuide type="bottom" id="lcP-Xh-h5N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Zn-Zg-9bE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="izH-LW-Yel">
+                                <rect key="frame" x="124" y="454" width="127" height="68"/>
+                                <color key="backgroundColor" red="0.34509803919999998" green="0.73725490199999999" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="hLV-ti-ZDZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                <state key="normal" title="Add Image">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openFusuma:" destination="65A-ru-Zyw" eventType="touchUpInside" id="F28-si-toD"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sE2-4c-eML">
+                                <rect key="frame" x="0.0" y="64" width="375" height="311"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lcP-Xh-h5N" firstAttribute="top" secondItem="izH-LW-Yel" secondAttribute="bottom" constant="96" id="1QQ-dy-AC9"/>
+                            <constraint firstItem="sE2-4c-eML" firstAttribute="trailing" secondItem="9Zn-Zg-9bE" secondAttribute="trailingMargin" constant="16" id="2G2-ud-cO6"/>
+                            <constraint firstItem="lcP-Xh-h5N" firstAttribute="top" secondItem="sE2-4c-eML" secondAttribute="bottom" constant="243" id="JPy-nU-cL1"/>
+                            <constraint firstItem="izH-LW-Yel" firstAttribute="centerX" secondItem="sE2-4c-eML" secondAttribute="centerX" id="N2z-K5-LKs"/>
+                            <constraint firstItem="sE2-4c-eML" firstAttribute="leading" secondItem="9Zn-Zg-9bE" secondAttribute="leadingMargin" constant="-16" id="RIy-gK-Nu0"/>
+                            <constraint firstItem="izH-LW-Yel" firstAttribute="top" secondItem="sE2-4c-eML" secondAttribute="bottom" constant="79" id="nWN-iV-0hQ"/>
+                            <constraint firstItem="sE2-4c-eML" firstAttribute="top" secondItem="muf-1Q-Vmz" secondAttribute="bottom" id="ryX-gP-3Kd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pill Reader" id="Ubg-0y-DCC">
+                        <barButtonItem key="rightBarButtonItem" title="Reset UI" id="Dj7-Uv-TLn">
+                            <connections>
+                                <action selector="resetUI:" destination="65A-ru-Zyw" id="OUl-dG-Exb"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="addImageButton" destination="izH-LW-Yel" id="WSV-jC-3ki"/>
+                        <outlet property="imageView" destination="sE2-4c-eML" id="2b3-M5-RiB"/>
+                        <outlet property="resetUIButton" destination="Dj7-Uv-TLn" id="6nu-Zm-Dpf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ehL-UJ-k3u" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1260" y="-35.532233883058474"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qkV-cs-eIt">
+            <objects>
+                <tabBarController id="kep-SU-NW6" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="Y6e-3r-t63">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="gHA-ma-dJ4" kind="relationship" relationship="viewControllers" id="Tf8-X4-Wue"/>
+                        <segue destination="kel-Nh-Rkt" kind="relationship" relationship="viewControllers" id="8A0-VA-iP3"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="48P-lW-22j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-281" y="500"/>
+        </scene>
+        <!--Add Image-->
+        <scene sceneID="gRB-Cb-AUr">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gHA-ma-dJ4" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Add Image" image="Camera" id="FEt-pe-FYA"/>
+                    <toolbarItems/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="W1v-vE-9a9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="65A-ru-Zyw" kind="relationship" relationship="rootViewController" id="qQC-YK-b07"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMA-33-8Yq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="519" y="-36"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="nne-BO-eOA">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="kel-Nh-Rkt" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item 2" id="mMp-7R-S2A"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="4uu-yi-Xbq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lex-Is-F2S" kind="relationship" relationship="rootViewController" id="jVG-AG-2gW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tqd-pM-Uqn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670.5" y="826.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Camera" width="24" height="18"/>
+    </resources>
+</document>

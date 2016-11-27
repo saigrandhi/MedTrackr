@@ -1,0 +1,135 @@
+{
+  "language": "en",
+  "textAngle": 0,
+  "orientation": "Up",
+  "regions": [
+    {
+      "boundingBox": "366,672,306,311",
+      "lines": [
+        {
+          "boundingBox": "394,672,273,58",
+          "words": [
+            {
+              "boundingBox": "394,672,273,58",
+              "text": "0420869-05209"
+            }
+          ]
+        },
+        {
+          "boundingBox": "366,770,295,55",
+          "words": [
+            {
+              "boundingBox": "366,772,51,50",
+              "text": "hi(E"
+            },
+            {
+              "boundingBox": "426,789,15,21",
+              "text": "3"
+            },
+            {
+              "boundingBox": "451,792,125,23",
+              "text": "TABLETS"
+            },
+            {
+              "boundingBox": "587,770,74,55",
+              "text": "ORA}/"
+            }
+          ]
+        },
+        {
+          "boundingBox": "368,871,170,46",
+          "words": [
+            {
+              "boundingBox": "368,871,170,46",
+              "text": "PREDNISONE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "579,933,38,22",
+          "words": [
+            {
+              "boundingBox": "579,933,38,22",
+              "text": "MFG"
+            }
+          ]
+        },
+        {
+          "boundingBox": "396,940,276,43",
+          "words": [
+            {
+              "boundingBox": "396,950,81,31",
+              "text": "REFILLS"
+            },
+            {
+              "boundingBox": "488,973,8,3",
+              "text": "-"
+            },
+            {
+              "boundingBox": "506,964,41,19",
+              "text": "DR."
+            },
+            {
+              "boundingBox": "557,940,115,41",
+              "text": "AUTHORIZ\\"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "118,1319,394,53",
+      "lines": [
+        {
+          "boundingBox": "118,1319,394,53",
+          "words": [
+            {
+              "boundingBox": "118,1319,134,53",
+              "text": "alamy"
+            },
+            {
+              "boundingBox": "266,1320,111,41",
+              "text": "stock"
+            },
+            {
+              "boundingBox": "391,1320,121,52",
+              "text": "photo"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "boundingBox": "615,976,195,394",
+      "lines": [
+        {
+          "boundingBox": "615,976,27,22",
+          "words": [
+            {
+              "boundingBox": "615,976,27,22",
+              "text": "USE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "740,1329,70,12",
+          "words": [
+            {
+              "boundingBox": "740,1329,70,12",
+              "text": "A6DWKE"
+            }
+          ]
+        },
+        {
+          "boundingBox": "688,1354,122,16",
+          "words": [
+            {
+              "boundingBox": "688,1354,122,16",
+              "text": "wvvw.alamy.com"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
